@@ -23,11 +23,6 @@
     "test-watch": "vitest watch",
     "pretty": "prettier -w \"./src/**/*.ts\""
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged \"./src/**/*.ts\""
-    }
-  },
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^22.1.0",
