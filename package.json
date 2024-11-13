@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/uniqueid",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "A simple unique id generator that produce a unique id that is 23 chars/bytes long",
   "author": "Damiano Fusco",
   "license": "MIT",
@@ -24,12 +24,12 @@
     "pretty": "prettier -w \"./src/**/*.ts\""
   },
   "devDependencies": {
-    "@types/jest": "^29.5.12",
-    "@types/node": "^22.1.0",
-    "jsdom": "^24.1.1",
-    "typescript": "^5.5.4",
-    "vite": "^5.3.5",
-    "vitest": "^2.0.5"
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.9.0",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.4"
   },
   "files": [
     "dist"
@@ -42,7 +42,7 @@
       "import": [
         "./dist/uniqueid.es.js"
       ],
-      "require":"./dist/uniqueid.umd.js",
+      "require": "./dist/uniqueid.umd.js",
       "types": "./dist/index.d.ts"
     },
     "./package.json": "./package.json"
