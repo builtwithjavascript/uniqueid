@@ -66,18 +66,18 @@ export const useUniqueId = () => {
       return _id(time || new Date().getTime())
     },
     // Generate a compressed unique ID by encoding the raw ID in base-36
-    encodeId: (value: string) => {
+    encodeBase36: (value: string) => {
       // Compress the value by converting it to a base-36 string representation
       return BigInt(value).toString(36)
     },
     // Generate a compressed unique ID by encoding the raw ID in base-36
-    encodedId: (time?: number) => {
+    uniqueId: (time?: number) => {
       const result = _id(time || new Date().getTime())
       // Compress the raw ID by converting it to a base-36 string representation
       return BigInt(result).toString(36)
     },
     // Decode an encoded ID back to its original numeric string (base-10)
-    decodeId: (value: string | number) => {
+    decodeBase36: (value: string | number) => {
       // Convert the base-36 encoded string back to base-10 using `reduce`
       // Each character is converted from base-36 and accumulated into the final base-10 result
       const arr = `${value}`.split('')
