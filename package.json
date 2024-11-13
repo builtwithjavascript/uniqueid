@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/uniqueid",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "A simple unique id generator that produce a unique id that is 23 chars/bytes long",
   "author": "Damiano Fusco",
   "license": "MIT",
