@@ -66,6 +66,11 @@ export const useUniqueId = () => {
       return _id(time || new Date().getTime())
     },
     // Generate a compressed unique ID by encoding the raw ID in base-36
+    encodeId: (value: string) => {
+      // Compress the value by converting it to a base-36 string representation
+      return BigInt(value).toString(36)
+    },
+    // Generate a compressed unique ID by encoding the raw ID in base-36
     encodedId: (time?: number) => {
       const result = _id(time || new Date().getTime())
       // Compress the raw ID by converting it to a base-36 string representation
